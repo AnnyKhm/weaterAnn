@@ -1,0 +1,15 @@
+<form class="form-control" (ngSubmit)="getCurrent(zip.value)">
+    <input type="text" placeholder="Enter zip code" minlength="5" maxlength="5" #zip>
+    <button class="Search" type="submit">Search for the weather</button>
+
+    <div class="container">
+        <h1>{{Name}}</h1>
+        <h2> Temperature {{Temp}}° </h2>
+        <div class="img">
+            <img [src]="iconUrl" alt="weather">
+        </div>
+        <h3>{{WeatherKind}}</h3>
+        <h4>Max Temperature {{Max}}°</h4>
+        <h4>Min Temperature {{Min}}°</h4>
+    </div>
+</form>

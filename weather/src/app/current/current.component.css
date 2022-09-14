@@ -1,0 +1,17 @@
+
+ form {
+    display: flex;
+    flex-direction: column;
+ }
+
+ input{
+    width: 29.5%;
+    height: 30px;
+    margin-top: 5px;
+ }
+
+ button {
+    width: 30%;
+    height: 30px;
+    margin-top: 5px;  
+ }

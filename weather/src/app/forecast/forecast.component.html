@@ -1,0 +1,30 @@
+<div class="wrapper">
+    <ng-container *ngIf="weatherForecastData.length">
+        <div class="container" *ngFor="let weatherData of weatherForecastData">
+            <h1>City Name {{weatherData.Name}}</h1>
+            <h2> Temperature: {{weatherData.Temp}}° </h2>
+            <div class="img">
+                <img [src]="weatherData.iconUrl" alt="weather">
+            </div>
+            <h3>{{weatherData.WeatherKind}}</h3>
+            <h4>Max Temperature: {{weatherData.Max}}° </h4>
+            <h4>Min  Temperature: {{weatherData.Min}}° </h4>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="!weatherForecastData.length">
+        <div class="container">
+            <h1>{{Name}}</h1>
+            <h2>{{Temp}} </h2>
+            <div class="img">
+                <img [src]="iconUrl" alt="weather">
+            </div>
+            <h3>{{WeatherKind}}</h3>
+            <h4>{{Max}} </h4>
+            <h4>{{Min}} </h4>
+        </div>
+    </ng-container>
+</div>
+
+
+{{zipCode}}
